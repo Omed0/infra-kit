@@ -4,6 +4,9 @@ A comprehensive TypeScript/JavaScript SDK for self-hosted infrastructure service
 
 [![npm version](https://img.shields.io/npm/v/@omed0/infra-kit.svg)](https://www.npmjs.com/package/@omed0/infra-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub](https://img.shields.io/github/stars/Omed0/infra-kit?style=social)](https://github.com/Omed0/infra-kit)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green.svg)](https://nodejs.org/)
 
 ## Features
 
@@ -312,14 +315,15 @@ import type { Config, RateLimitResult } from "@omed0/infra-kit";
 
 ## License
 
-MIT © [Your Name]
+MIT © [Omed0](https://github.com/Omed0)
 
 ## Contributing
 
-Contributions welcome! Please open an issue or PR.
+Contributions welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) and open an issue or PR.
 
 ## Support
 
-- 📖 [Documentation](https://github.com/omed0/infra-kit)
-- 🐛 [Issues](https://github.com/omed0/infra-kit/issues)
-- 💬 [Discussions](https://github.com/omed0/infra-kit/discussions)
+- 📖 [Documentation](https://github.com/Omed0/infra-kit#readme)
+- 🐛 [Issues](https://github.com/Omed0/infra-kit/issues)
+- 💬 [Discussions](https://github.com/Omed0/infra-kit/discussions)
+- 📦 [npm Package](https://www.npmjs.com/package/@omed0/infra-kit)
