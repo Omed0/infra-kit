@@ -1,0 +1,118 @@
+{
+    "name": "@omed0/infra-kit",
+    "version": "1.0.1",
+    "description": "A comprehensive, production-ready TypeScript SDK for self-hosted infrastructure services including queue management, caching, object storage, pub/sub events, rate limiting, distributed locking, and session management",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        },
+        "./queue": {
+            "types": "./dist/queue/index.d.ts",
+            "import": "./dist/queue/index.js",
+            "require": "./dist/queue/index.cjs"
+        },
+        "./cache": {
+            "types": "./dist/cache/index.d.ts",
+            "import": "./dist/cache/index.js",
+            "require": "./dist/cache/index.cjs"
+        },
+        "./storage": {
+            "types": "./dist/storage/index.d.ts",
+            "import": "./dist/storage/index.js",
+            "require": "./dist/storage/index.cjs"
+        },
+        "./events": {
+            "types": "./dist/events/index.d.ts",
+            "import": "./dist/events/index.js",
+            "require": "./dist/events/index.cjs"
+        },
+        "./rate-limit": {
+            "types": "./dist/rate-limit/index.d.ts",
+            "import": "./dist/rate-limit/index.js",
+            "require": "./dist/rate-limit/index.cjs"
+        },
+        "./lock": {
+            "types": "./dist/lock/index.d.ts",
+            "import": "./dist/lock/index.js",
+            "require": "./dist/lock/index.cjs"
+        },
+        "./session": {
+            "types": "./dist/session/index.d.ts",
+            "import": "./dist/session/index.js",
+            "require": "./dist/session/index.cjs"
+        }
+    },
+    "files": [
+        "dist",
+        "docs",
+        "README.md",
+        "LICENSE",
+        "CHANGELOG.md"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "typecheck": "tsc --noEmit",
+        "prepublishOnly": "npm run typecheck && npm run build",
+        "test": "echo \"No tests specified\" && exit 0"
+    },
+    "keywords": [
+        "queue",
+        "cache",
+        "storage",
+        "redis",
+        "bullmq",
+        "minio",
+        "s3",
+        "event-bus",
+        "pub-sub",
+        "rate-limiting",
+        "distributed-lock",
+        "session-management",
+        "infrastructure",
+        "self-hosted",
+        "typescript",
+        "backend",
+        "microservices",
+        "production-ready",
+        "scalable"
+    ],
+    "author": {
+        "name": "Omed0",
+        "url": "https://github.com/omed0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/omed0/infra-kit.git"
+    },
+    "bugs": {
+        "url": "https://github.com/omed0/infra-kit/issues"
+    },
+    "homepage": "https://github.com/omed0/infra-kit#readme",
+    "license": "MIT",
+    "peerDependencies": {
+        "bullmq": ">=5.0.0",
+        "ioredis": ">=5.0.0",
+        "minio": ">=8.0.0"
+    },
+    "dependencies": {
+        "zod": "^3.22.4"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "bullmq": "^5.64.0",
+        "ioredis": "^5.8.2",
+        "minio": "^8.0.6",
+        "tsup": "^8.0.1",
+        "typescript": "^5.3.3"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
